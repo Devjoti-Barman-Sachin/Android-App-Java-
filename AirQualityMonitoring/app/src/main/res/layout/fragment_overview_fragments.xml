@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OverviewFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.170"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/pm1_0TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420" />
+
+    <TextView
+        android:id="@+id/pm2_5TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420" />
+
+
+    <TextView
+        android:id="@+id/pm10_0TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.870"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420" />
+
+
+    <TextView
+        android:id="@+id/co2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="CO2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <TextView
+        android:id="@+id/coTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="CO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+
+    <TextView
+        android:id="@+id/tvocTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="TVOC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+
+    <TextView
+        android:id="@+id/aqiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AQI"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.900" />
+
+
+
+    <ProgressBar
+        android:id="@+id/humidityProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/humidityTextView"
+        app:layout_constraintEnd_toEndOf="@+id/humidityTextView"
+        app:layout_constraintStart_toStartOf="@+id/humidityTextView"
+        app:layout_constraintTop_toTopOf="@+id/humidityTextView" />
+
+    <ProgressBar
+        android:id="@+id/temperatureProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="80"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/temperatureTextView"
+        app:layout_constraintEnd_toEndOf="@+id/temperatureTextView"
+        app:layout_constraintStart_toStartOf="@+id/temperatureTextView"
+        app:layout_constraintTop_toTopOf="@+id/temperatureTextView" />
+
+
+    <ProgressBar
+        android:id="@+id/pm1_0ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm1_0TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm1_0TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm1_0TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm1_0TextView" />
+
+    <ProgressBar
+        android:id="@+id/pm2_5ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm2_5TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm2_5TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm2_5TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm2_5TextView" />
+
+    <ProgressBar
+        android:id="@+id/pm10_0ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm10_0TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm10_0TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm10_0TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm10_0TextView" />
+
+
+    <ProgressBar
+        android:id="@+id/co2ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="5000"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/co2TextView"
+        app:layout_constraintEnd_toEndOf="@+id/co2TextView"
+        app:layout_constraintStart_toStartOf="@+id/co2TextView"
+        app:layout_constraintTop_toTopOf="@+id/co2TextView" />
+
+    <ProgressBar
+        android:id="@+id/coProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="50"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/coTextView"
+        app:layout_constraintEnd_toEndOf="@+id/coTextView"
+        app:layout_constraintStart_toStartOf="@+id/coTextView"
+        app:layout_constraintTop_toTopOf="@+id/coTextView" />
+
+    <ProgressBar
+        android:id="@+id/tvocProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="3300"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/tvocTextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvocTextView"
+        app:layout_constraintStart_toStartOf="@+id/tvocTextView"
+        app:layout_constraintTop_toTopOf="@+id/tvocTextView" />
+
+    <ProgressBar
+        android:id="@+id/aqiProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/aqiTextView"
+        app:layout_constraintEnd_toEndOf="@+id/aqiTextView"
+        app:layout_constraintStart_toStartOf="@+id/aqiTextView"
+        app:layout_constraintTop_toTopOf="@+id/aqiTextView" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="humidityTextView,temperatureTextView,pm1_0TextView,pm2_5TextView,pm10_0TextView,humidityProgressBar,temperatureProgressBar,pm1_0ProgressBar,pm2_5ProgressBar,pm10_0ProgressBar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.130"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="CO2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="CO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="TVOC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+
+    <TextView
+        android:id="@+id/aqitextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="AQI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.870" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

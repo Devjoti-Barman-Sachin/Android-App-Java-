@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OverviewFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/pm1_0TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.200" />
+
+    <TextView
+        android:id="@+id/pm2_5TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.200" />
+
+
+    <TextView
+        android:id="@+id/pm10_0TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.200" />
+
+    <ProgressBar
+        android:id="@+id/pm1_0ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm1_0TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm1_0TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm1_0TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm1_0TextView" />
+
+    <ProgressBar
+        android:id="@+id/pm2_5ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm2_5TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm2_5TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm2_5TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm2_5TextView" />
+
+    <ProgressBar
+        android:id="@+id/pm10_0ProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:indeterminateOnly="false"
+        android:max="500"
+        android:progressDrawable="@drawable/progressbar_circle"
+        app:layout_constraintBottom_toTopOf="@+id/pm10_0TextView"
+        app:layout_constraintEnd_toEndOf="@+id/pm10_0TextView"
+        app:layout_constraintStart_toStartOf="@+id/pm10_0TextView"
+        app:layout_constraintTop_toTopOf="@+id/pm10_0TextView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PM10.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/idBarChart"
+        android:layout_width="413dp"
+        android:layout_height="474dp"
+        android:background="#D5FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

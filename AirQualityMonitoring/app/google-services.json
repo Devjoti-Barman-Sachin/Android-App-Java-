@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "922928269215",
+    "firebase_url": "https://airquality-6b804-default-rtdb.firebaseio.com",
+    "project_id": "airquality-6b804",
+    "storage_bucket": "airquality-6b804.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922928269215:android:0cd556e665a6de126a1faa",
+        "android_client_info": {
+          "package_name": "com.example.aqmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922928269215-aijv3cljrbis4cch5ndb47cinn44h0lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjwnNFWK89lFU88FnMd2FpAfRWf_WQuq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922928269215-aijv3cljrbis4cch5ndb47cinn44h0lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
